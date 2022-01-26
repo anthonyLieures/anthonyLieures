@@ -3,13 +3,13 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: gableroux/unity3d:2018.2.21f1
+    container: gableroux/unity3d:2019.4.11f1
     steps:
         - name: Checkout Project
           uses: actions/checkout@v1
 
         - name: Decrypt the license file
-          run: openssl aes-256-cbc -d -in .github/Unity_v2018.x.ulf.enc -k cookies >> .github/Unity_v2018.x.ulf
+          run: openssl aes-256-cbc -d -in .github/Unity_v2019.x.ulf.enc -k pouet >> .github/Unity_v2019.x.ulf
         
         # Activate unity
         - name: Activate Unity
