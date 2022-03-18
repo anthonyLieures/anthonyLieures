@@ -14,10 +14,10 @@ jobs:
           - iOS # Build an iOS player.
           - Android # Build an Android .apk standalone app.
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-          lfs: true
+          # fetch-depth: 0
+          # lfs: true
       - uses: actions/cache@v2
         with:
           path: Library
