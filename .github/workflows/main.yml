@@ -18,6 +18,9 @@ jobs:
         # with:
           # fetch-depth: 0
           # lfs: true
+      - name: Unity - Activate
+        uses: game-ci/unity-activate@v1.3
+        
       - uses: actions/cache@v2
         with:
           path: Library
